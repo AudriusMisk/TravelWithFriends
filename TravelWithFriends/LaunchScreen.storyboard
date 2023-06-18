@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="externaldrive.badge.checkmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Cok-u6-ROq">
+                                <rect key="frame" x="120.66666666666669" y="353" width="151" height="147.33333333333331"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Sth-mR-K2R"/>
+                                    <constraint firstAttribute="height" constant="150" id="h65-eO-uGy"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UNr-7Q-f8U">
+                                <rect key="frame" x="126" y="517" width="141" height="40.666666666666629"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140.66999999999999" id="5My-bq-hwb"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="141" id="MFZ-x2-1Cf"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40.670000000000002" id="fAE-IP-UaK"/>
+                                    <constraint firstAttribute="height" constant="40.670000000000002" id="gxl-jm-r3q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="UNr-7Q-f8U" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="140" id="HP0-A5-XfH"/>
+                            <constraint firstItem="Cok-u6-ROq" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Hlj-0Q-A05"/>
+                            <constraint firstItem="UNr-7Q-f8U" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="b6g-og-t3K"/>
+                            <constraint firstItem="Cok-u6-ROq" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="hXq-Gf-A44"/>
+                            <constraint firstItem="UNr-7Q-f8U" firstAttribute="top" secondItem="Cok-u6-ROq" secondAttribute="bottom" constant="16" id="til-fZ-GqN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="externaldrive.badge.checkmark" catalog="system" width="128" height="91"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
