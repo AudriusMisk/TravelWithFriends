@@ -42,12 +42,10 @@ class ListViewController: UIViewController,UITableViewDataSource, UITableViewDel
     tableView.dataSource = self
     tableView.delegate = self
     
-    // Create a UIBarButtonItem for the dismiss or back button
     let dismissButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissButtonTapped))
 
     let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonTapped))
 
-    // Add the dismiss or back button to the left side of the navigation bar
     navigationItem.leftBarButtonItem = dismissButton
 
     navigationItem.rightBarButtonItem = addButton
@@ -78,7 +76,6 @@ class ListViewController: UIViewController,UITableViewDataSource, UITableViewDel
 
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    // Return the number of rows you want to display
     return people.count
   }
   

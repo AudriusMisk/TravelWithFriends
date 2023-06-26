@@ -23,7 +23,6 @@ class EditViewController: UIViewController {
 
   @IBOutlet weak var currentLocationButton: UIButton!
 
-//  var objectLocationIdentifier: UUID?
 
   private let completer = MKLocalSearchCompleter()
 
@@ -38,7 +37,6 @@ class EditViewController: UIViewController {
 
   let locationManager = CLLocationManager()
 
-//  var currentLoction: CLLocationCoordinate2D?
   var shouldShowLocateCurrentLocationButton = false
 
   var editableItemType: ListViewController.ListType = .people
@@ -75,14 +73,11 @@ class EditViewController: UIViewController {
 
   func startLocationTracking() {
 
-    // Set up the location manager
     locationManager.delegate = self
     locationManager.desiredAccuracy = kCLLocationAccuracyBest
 
-    // Request location authorization
     locationManager.requestWhenInUseAuthorization()
 
-    // Check if location services are enabled
     if CLLocationManager.locationServicesEnabled() {
       locationManager.startUpdatingLocation()
     }
@@ -184,17 +179,15 @@ class EditViewController: UIViewController {
 
   @objc func locateClicked() {
 
-    let address = addressTextField.text ?? "" //"Your Address"
+    let address = addressTextField.text ?? ""
     geocoder.geocodeAddressString(address) { (placemarks, error) in
       if let error = error {
-        // Handle the error
         print("Geocoding error: \(error.localizedDescription)")
         return
       }
 
       guard let placemark = placemarks?.first,
             let location = placemark.location else {
-        // Unable to geocode the address
         return
       }
 
@@ -202,7 +195,6 @@ class EditViewController: UIViewController {
       let latitude = coordinates.latitude
       let longitude = coordinates.longitude
 
-      // Use the latitude and longitude as needed
       print("Latitude: \(latitude), Longitude: \(longitude)")
 
       self.coordinatesTextField.text = latitude.description + "," + longitude.description
@@ -213,7 +205,6 @@ class EditViewController: UIViewController {
 
   private func showSuggestion(_ suggestion: String) {
     suggestionLabel.text = suggestion
-    //    suggestionContainerTopConstraint.constant = -4 // to hide the top corners
 
     UIView.animate(withDuration: 0.25) {
       self.view.layoutIfNeeded()
@@ -239,13 +230,9 @@ extension EditViewController: MKLocalSearchCompleterDelegate {
 extension EditViewController: CLLocationManagerDelegate {
   func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
     if let location = locations.last {
-      // Set the map view's region to display the user's current location
-      //          let region = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: 500, longitudinalMeters: 500)
-      //          mapView.setRegion(region, animated: true)
-      
+  
       locatedLoction = locationManager.location?.coordinate
 
-      // Stop updating location once it's obtained
       locationManager.stopUpdatingLocation()
 
     }

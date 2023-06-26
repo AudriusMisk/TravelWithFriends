@@ -86,7 +86,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZwV-SR-Cyk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-762.39999999999998" y="51.724137931034484"/>
+            <point key="canvasLocation" x="-762" y="-227"/>
         </scene>
         <!--List View Controller-->
         <scene sceneID="7ZN-ZB-BIH">
@@ -152,7 +152,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dg9-Ld-gZ3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="822" y="32"/>
+            <point key="canvasLocation" x="822" y="-227"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="G9c-IN-vfd">
@@ -170,7 +170,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OGS-CC-fAu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="13.6" y="51.724137931034484"/>
+            <point key="canvasLocation" x="57" y="-227"/>
         </scene>
         <!--Edit View Controller-->
         <scene sceneID="MdU-YR-mQv">
@@ -258,7 +258,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kZk-iR-MFy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2199" y="-591"/>
+            <point key="canvasLocation" x="2302" y="-227"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2WQ-4j-w5q">
@@ -276,7 +276,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Cc-P3-vFB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1530" y="-660"/>
+            <point key="canvasLocation" x="1569" y="-227"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="F0L-60-bwd">
@@ -362,7 +362,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Igf-Fp-NBx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-762" y="-783"/>
+            <point key="canvasLocation" x="-762" y="-970"/>
         </scene>
         <!--Activities View Controller-->
         <scene sceneID="wFO-kG-Ye4">
@@ -384,14 +384,14 @@
                                     <action selector="poolTapped:" destination="qPR-Xd-DN7" eventType="touchUpInside" id="WAd-xo-Z7K"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfv-EN-5WT">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfv-EN-5WT" userLabel="Edit cinemas list">
                                 <rect key="frame" x="112.5" y="521" width="150" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="6NL-Tc-Hed"/>
                                     <constraint firstAttribute="width" constant="150" id="yOe-V1-QX4"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Edit cinems list"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Edit cinemas list"/>
                                 <connections>
                                     <action selector="cinemaTapped:" destination="qPR-Xd-DN7" eventType="touchUpInside" id="dYr-W5-Nmx"/>
                                 </connections>
@@ -408,24 +408,24 @@
                                     <action selector="bowlingTapped:" destination="qPR-Xd-DN7" eventType="touchUpInside" id="a0Z-zc-jsL"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="activities" translatesAutoresizingMaskIntoConstraints="NO" id="k33-up-vDr">
-                                <rect key="frame" x="8" y="64" width="359" height="350"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="list" translatesAutoresizingMaskIntoConstraints="NO" id="Zi7-Ws-aZa">
+                                <rect key="frame" x="0.0" y="56" width="375" height="300"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="350" id="JGU-zl-pLF"/>
+                                    <constraint firstAttribute="height" constant="300" id="jI0-Gg-dOP"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8ph-Hk-CZW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="8ph-Hk-CZW" firstAttribute="trailing" secondItem="k33-up-vDr" secondAttribute="trailing" constant="8" id="5G8-1d-mBo"/>
                             <constraint firstItem="dfv-EN-5WT" firstAttribute="centerX" secondItem="RZr-Ch-xfk" secondAttribute="centerX" id="8pY-u7-j1j"/>
+                            <constraint firstItem="Zi7-Ws-aZa" firstAttribute="top" secondItem="8ph-Hk-CZW" secondAttribute="top" id="CYY-Gi-o0o"/>
                             <constraint firstItem="9mB-G4-Yd1" firstAttribute="centerX" secondItem="RZr-Ch-xfk" secondAttribute="centerX" id="FF4-Yw-jSu"/>
-                            <constraint firstItem="k33-up-vDr" firstAttribute="leading" secondItem="8ph-Hk-CZW" secondAttribute="leading" constant="8" id="WRT-zd-OBd"/>
+                            <constraint firstAttribute="trailing" secondItem="Zi7-Ws-aZa" secondAttribute="trailing" id="L3Q-lh-72K"/>
                             <constraint firstItem="dfv-EN-5WT" firstAttribute="top" secondItem="9mB-G4-Yd1" secondAttribute="bottom" constant="24" id="Xbt-tU-ktF"/>
                             <constraint firstItem="8ph-Hk-CZW" firstAttribute="bottom" secondItem="9B7-vl-Urj" secondAttribute="bottom" constant="32" id="b3m-rN-qmS"/>
+                            <constraint firstItem="Zi7-Ws-aZa" firstAttribute="leading" secondItem="RZr-Ch-xfk" secondAttribute="leading" id="igP-hD-Tqb"/>
                             <constraint firstItem="9B7-vl-Urj" firstAttribute="top" secondItem="dfv-EN-5WT" secondAttribute="bottom" constant="24" id="jzK-nm-JEp"/>
-                            <constraint firstItem="k33-up-vDr" firstAttribute="top" secondItem="8ph-Hk-CZW" secondAttribute="top" constant="8" id="mVX-zv-ALF"/>
                             <constraint firstItem="9B7-vl-Urj" firstAttribute="centerX" secondItem="RZr-Ch-xfk" secondAttribute="centerX" id="z5K-Cw-5Bi"/>
                         </constraints>
                     </view>
@@ -436,7 +436,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tyc-ya-idk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="975.20000000000005" y="-1318.2908545727137"/>
+            <point key="canvasLocation" x="821.60000000000002" y="-970.16491754122944"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="RFE-lh-0Fc">
@@ -455,15 +455,15 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wK4-5P-ohp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="36" y="-1318.2908545727137"/>
+            <point key="canvasLocation" x="58" y="-970"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="aWn-SI-7O7"/>
-        <segue reference="Y5B-KM-dJn"/>
+        <segue reference="MCS-a5-kYp"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="activities" width="966" height="973"/>
+        <image name="list" width="983" height="1024"/>
         <image name="route" width="989" height="991"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

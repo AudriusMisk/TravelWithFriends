@@ -81,7 +81,6 @@ class MapViewController: UIViewController {
     print("shortest route:", shortestRoute)
     self.mapView.removeOverlays(self.mapView.overlays)
     
-    //kelio vaizdavimas
     if shortestRoute.count > 1 {
       for i in 0..<shortestRoute.count-1 {
         let sourcePlacemark = MKPlacemark(coordinate: shortestRoute[i].coordinate)
@@ -103,7 +102,6 @@ class MapViewController: UIViewController {
             }
             return
           }
-          // nubrezia route
           self.mapView.addOverlay(route.polyline)
         }
       }
@@ -131,7 +129,6 @@ class MapViewController: UIViewController {
     closeButton.addTarget(self, action: #selector(closeClicked), for: .touchUpInside)
 
 
-    // setinu initiallocationa
     let initialLocation = CLLocation(latitude: 54.702593, longitude: 25.288330)
     mapView.centerToLocation(initialLocation)
     
@@ -158,14 +155,11 @@ class MapViewController: UIViewController {
 
   private func setupLocationTracking() {
 
-    // Set up the location manager
     locationManager.delegate = self
     locationManager.desiredAccuracy = kCLLocationAccuracyBest
 
-    // Request location authorization
     locationManager.requestWhenInUseAuthorization()
 
-    // Check if location services are enabled
     if CLLocationManager.locationServicesEnabled() {
       locationManager.startUpdatingLocation()
     }
@@ -222,12 +216,6 @@ extension MapViewController: MKMapViewDelegate {
 extension MapViewController: CLLocationManagerDelegate {
   func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
     if let location = locations.last {
-      // Set the map view's region to display the user's current location
-      //          let region = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: 500, longitudinalMeters: 500)
-      //          mapView.setRegion(region, animated: true)
-
-      // Stop updating location once it's obtained
-      //locationManager.stopUpdatingLocation()
     }
   }
 }
