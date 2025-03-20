@@ -1,9 +1,9 @@
 # Travel With Friends
 
-<img src="https://github.com/user-attachments/assets/c736b569-de34-4254-9895-25a4c5fd97d8" width="200">
-<img src="https://github.com/user-attachments/assets/9dc1a8a1-9e82-46a4-926f-a63cee251834" width="213">
-<img src="https://github.com/user-attachments/assets/e51ac71c-6e83-4eac-8a29-8609acb7d2a0" width="213">
-<img src="https://github.com/user-attachments/assets/de394ed1-fb87-4016-8d84-52409a5a8f6f" width="200">
+<img src="https://github.com/user-attachments/assets/c736b569-de34-4254-9895-25a4c5fd97d8" width="180">
+<img src="https://github.com/user-attachments/assets/9dc1a8a1-9e82-46a4-926f-a63cee251834" width="193">
+<img src="https://github.com/user-attachments/assets/e51ac71c-6e83-4eac-8a29-8609acb7d2a0" width="193">
+<img src="https://github.com/user-attachments/assets/de394ed1-fb87-4016-8d84-52409a5a8f6f" width="180">
 
 
 
